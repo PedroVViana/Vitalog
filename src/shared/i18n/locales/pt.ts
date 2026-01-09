@@ -188,6 +188,20 @@ export const pt = {
         errorOccurred: 'Ocorreu um erro',
     },
 
+    // Meal Category Form Modal
+    mealCategoryForm: {
+        newTitle: 'Nova Categoria de Refeição',
+        editTitle: 'Editar Categoria de Refeição',
+        categoryName: 'Nome da Categoria',
+        categoryNamePlaceholder: 'ex: Café da Manhã, Almoço, Lanche',
+        mealType: 'Tipo de Refeição',
+        color: 'Cor',
+        cancel: 'Cancelar',
+        saveChanges: 'Salvar Alterações',
+        createCategory: 'Criar Categoria',
+        errorOccurred: 'Ocorreu um erro',
+    },
+
     // Common
     common: {
         save: 'Salvar',

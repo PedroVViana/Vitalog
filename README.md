@@ -31,6 +31,53 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Pré-requisitos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Conta na [Vercel](https://vercel.com)
+2. Projeto no GitHub, GitLab ou Bitbucket (recomendado)
+
+### Passo a Passo
+
+1. **Conecte seu repositório à Vercel:**
+   - Acesse [vercel.com/new](https://vercel.com/new)
+   - Conecte seu repositório Git
+   - Selecione o projeto `vitalog-frontend`
+
+2. **Configure as Variáveis de Ambiente:**
+   
+   Na Vercel, vá em **Settings** > **Environment Variables** e adicione:
+   
+   ```
+   NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyBv1bG_dQFvw3mwHUUyldfrCgo4LNulyPI
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=vitalog-81cae.firebaseapp.com
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=vitalog-81cae
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=vitalog-81cae.firebasestorage.app
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=171924392652
+   NEXT_PUBLIC_FIREBASE_APP_ID=1:171924392652:web:b51652a67006ef06499069
+   NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=G-K7NK4YL557
+   ```
+
+3. **Configure o Build:**
+   - Framework Preset: **Next.js** (detectado automaticamente)
+   - Build Command: `npm run build` (padrão)
+   - Output Directory: `.next` (padrão)
+   - Install Command: `npm install` (padrão)
+
+4. **Deploy:**
+   - Clique em **Deploy**
+   - A Vercel fará o build e deploy automaticamente
+   - Você receberá uma URL do tipo: `https://vitalog-frontend.vercel.app`
+
+### Configurações Adicionais
+
+- **Domínio Customizado:** Vá em **Settings** > **Domains** para adicionar seu domínio
+- **Deploy Automático:** Cada push para a branch principal fará deploy automático
+- **Preview Deploys:** Pull requests recebem URLs de preview automaticamente
+
+### Troubleshooting
+
+- Se o build falhar, verifique se todas as variáveis de ambiente estão configuradas
+- Verifique os logs de build na Vercel para identificar erros
+- Certifique-se de que o Firebase está configurado corretamente (veja `FIREBASE_SETUP.md`)
+
+Para mais detalhes, consulte a [documentação de deploy do Next.js](https://nextjs.org/docs/app/building-your-application/deploying).

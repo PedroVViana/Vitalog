@@ -188,6 +188,20 @@ export const en = {
         errorOccurred: 'An error occurred',
     },
 
+    // Meal Category Form Modal
+    mealCategoryForm: {
+        newTitle: 'New Meal Category',
+        editTitle: 'Edit Meal Category',
+        categoryName: 'Category Name',
+        categoryNamePlaceholder: 'e.g. Breakfast, Lunch, Snack',
+        mealType: 'Meal Type',
+        color: 'Color',
+        cancel: 'Cancel',
+        saveChanges: 'Save Changes',
+        createCategory: 'Create Category',
+        errorOccurred: 'An error occurred',
+    },
+
     // Common
     common: {
         save: 'Save',
