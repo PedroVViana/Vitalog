@@ -1,0 +1,155 @@
+.dietForm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.disclaimer {
+    padding: var(--space-4);
+    background: rgba(var(--primary-rgb), 0.05);
+    border: 1px solid rgba(var(--primary-rgb), 0.1);
+    border-radius: var(--radius-xl);
+}
+
+.disclaimerText {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin: 0;
+}
+
+.dateRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+}
+
+.formActions {
+    display: flex;
+    gap: var(--space-3);
+    padding-top: var(--space-4);
+}
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.sectionLabel {
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+}
+
+.helperText {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: calc(var(--space-1) * -1);
+}
+
+.fileUploadArea {
+    position: relative;
+}
+
+.fileInput {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.fileUploadLabel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    padding: var(--space-8);
+    border: 2px dashed var(--border);
+    border-radius: var(--radius-xl);
+    background: var(--bg-light);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.fileUploadLabel:hover {
+    border-color: var(--primary);
+    background: rgba(var(--primary-rgb), 0.05);
+}
+
+.fileTypes {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.attachmentPreview {
+    position: relative;
+}
+
+.imagePreview {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.imagePreview img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+.pdfPreview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4);
+    padding: var(--space-8);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    background: var(--bg-light);
+}
+
+.removeBtn {
+    position: absolute;
+    top: var(--space-2);
+    right: var(--space-2);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: var(--radius-full);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.removeBtn:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.pdfPreview .removeBtn {
+    position: static;
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    padding: var(--space-2) var(--space-4);
+    width: auto;
+    height: auto;
+    border-radius: var(--radius-lg);
+}
+
+.pdfPreview .removeBtn:hover {
+    background: var(--bg-light);
+    color: var(--text-main);
+}
+

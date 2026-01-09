@@ -1,0 +1,147 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activeDietCard {
+    background: linear-gradient(90deg, rgba(var(--primary-rgb), 0.1) 0%, rgba(var(--primary-rgb), 0.05) 100%);
+    border: 1px solid rgba(var(--primary-rgb), 0.2);
+}
+
+.activeDietHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: var(--space-3);
+}
+
+.activeBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-1) var(--space-3);
+    background: var(--primary);
+    color: white;
+    border-radius: var(--radius-full);
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--space-2);
+}
+
+.dietNotes {
+    margin-top: var(--space-3);
+    padding-top: var(--space-3);
+    border-top: 1px solid var(--border);
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.dietsList {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.emptyStateCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-16);
+    text-align: center;
+}
+
+.emptyStateTitle {
+    margin-bottom: var(--space-6);
+}
+
+.emptyStateDesc {
+    margin-bottom: var(--space-6);
+}
+
+.dietCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dietCardContent {
+    flex: 1;
+}
+
+.dietActions {
+    display: flex;
+    gap: var(--space-2);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.dietCard:hover .dietActions {
+    opacity: 1;
+}
+
+.btnTrash {
+    background: transparent;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: var(--radius-lg);
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnTrash:hover {
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+.activeDietActions {
+    display: flex;
+    gap: var(--space-2);
+    align-items: center;
+}
+
+.deleteModalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-4);
+}
+
+.deleteModalIcon {
+    margin-bottom: var(--space-4);
+}
+
+.deleteModalMessage {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: var(--space-2);
+}
+
+.deleteModalWarning {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: var(--space-6);
+}
+
+.deleteModalActions {
+    display: flex;
+    gap: var(--space-3);
+    width: 100%;
+    justify-content: flex-end;
+}
+

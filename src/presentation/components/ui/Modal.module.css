@@ -1,0 +1,70 @@
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+    z-index: 1000;
+    animation: fadeIn 0.2s ease-out;
+}
+
+.modalContent {
+    background-color: white;
+    width: 100%;
+    max-width: 32rem;
+    border-radius: var(--radius-3xl);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContentLarge {
+    max-width: 56rem;
+}
+
+.dark .modalContent {
+    background-color: var(--bg-dark);
+    border: 1px solid var(--border);
+}
+
+.modalHeader {
+    padding: var(--space-6) var(--space-8);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalBody {
+    padding: var(--space-8);
+    overflow-y: auto;
+}
+
+.closeBtn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: var(--space-2);
+    border-radius: var(--radius-full);
+    transition: all 0.2s;
+}
+
+.closeBtn:hover {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

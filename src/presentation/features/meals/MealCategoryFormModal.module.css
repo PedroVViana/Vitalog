@@ -1,0 +1,77 @@
+.mealCategoryForm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.fieldGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.fieldLabel {
+    font-size: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+}
+
+.mealTypeRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.mealTypeBtn {
+    padding: var(--space-3) var(--space-4);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    background: transparent;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.mealTypeBtnActive {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px -1px rgba(var(--primary-rgb), 0.3);
+}
+
+.colorRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+}
+
+.colorBtn {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.colorBtnActive {
+    transform: scale(1.2);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px white, 0 0 0 4px var(--accent);
+}
+
+.dark .colorBtnActive {
+    box-shadow: 0 0 0 2px var(--bg-dark), 0 0 0 4px var(--accent);
+}
+
+.formActions {
+    display: flex;
+    gap: var(--space-3);
+    padding-top: var(--space-4);
+}
+
